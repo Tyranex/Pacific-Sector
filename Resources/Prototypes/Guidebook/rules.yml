@@ -1,6 +1,40 @@
 ﻿# Only one of those rulesets will appear on the server at any given time.
 # They all have a priority of 10 so they appear 2nd by default (after priority 0 and before priority 20)
 
+- type: guideEntry
+  id: PacificRuleset
+  name: guide-entry-rules-pacific
+  ruleEntry: true
+  priority: 20
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/Rules.xml"
+  children:
+  - RuleSC1
+  - RuleSC2
+  - RuleSC3
+
+# Core rules
+- type: guideEntry
+  id: RuleSC1
+  name: guide-entry-rules-sc1
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC1Admins.xml"
+
+- type: guideEntry
+  id: RuleSC2
+  name: guide-entry-rules-sc2
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC2Respect.xml"
+
+- type: guideEntry
+  id: RuleSC3
+  name: guide-entry-rules-sc3
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC3NSFW.xml"
+
+
+
+# Default below
+
 - type: guideEntry # Default for forks and stuff. Should not be listed anywhere if the server is using a custom ruleset.
   id: DefaultRuleset
   name: guide-entry-rules
