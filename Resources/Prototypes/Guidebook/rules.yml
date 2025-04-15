@@ -31,6 +31,31 @@
   ruleEntry: true
   text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC3NSFW.xml"
 
+- type: guideEntry
+  id: RuleSC4
+  name: guide-entry-rules-sc4
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC4CurrentRound.xml"
+
+- type: guideEntry
+  id: RuleSC5
+  name: guide-entry-rules-sc5
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC5Cheats.xml"
+
+- type: guideEntry
+  id: RuleSC6
+  name: guide-entry-rules-sc6
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC6Minimod.xml"
+
+- type: guideEntry
+  id: RuleSC7
+  name: guide-entry-rules-sc7
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC7Universe.xml"
+
+
 
 
 # Default below
