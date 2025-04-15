@@ -1,0 +1,18 @@
+- type: entity
+  id: ShellShotgun8ga
+  name: shell (8 ga.)
+  parent: [BaseShellShotgun, BaseSyndicateContraband]
+  components:
+  - type: Sprite
+    sprite: Objects/_pacific/Weapons/Guns/Ammunition/Casings/shotgun_shells.rsi
+    layers:
+    - state: 8ga-shell
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletShotgunSpread8ga
+  - type: SpentAmmoVisuals
+    state: "8ga-shell"
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeAntiMateriel

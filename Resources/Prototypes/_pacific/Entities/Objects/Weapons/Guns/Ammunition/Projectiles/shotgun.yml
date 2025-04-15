@@ -1,0 +1,9 @@
+- type: entity
+  id: PelletShotgunSpread8ga
+  categories: [ HideSpawnMenu ]
+  parent: PelletShotgun
+  components:
+  - type: ProjectileSpread
+    proto: PelletShotgun
+    count: 12
+    spread: 15
