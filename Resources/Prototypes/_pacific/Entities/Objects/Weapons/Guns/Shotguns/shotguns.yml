@@ -1,0 +1,46 @@
+- type: entity
+  name: KS-23
+  # Don't parent to BaseWeaponShotgun because it differs significantly
+  parent: [BaseItem, BaseGunWieldable, BaseSyndicateContraband]
+  id: WeaponShotgunKS
+  description: A heavy shotgun built to recycle damaged AA barrels. Fires 8 gauge shells.
+  components:
+  - type: Sprite
+    sprite: Objects/_pacific/Weapons/Guns/Shotguns/KS23.rsi
+    layers:
+    - state: icon
+      map: [ "enum.GunVisualLayers.Base" ]
+  - type: Item
+    size: Large
+    sprite: Objects/Weapons/Guns/Shotguns/pump_inhands_64x.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Shotguns/db_shotgun.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 0.8
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - CartridgeAntiMateriel
+    capacity: 4
+    proto: ShellShotgun8ga
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: StaticPrice
+    price: 500
