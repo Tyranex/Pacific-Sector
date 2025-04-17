@@ -12,4 +12,6 @@ changelog-button = Changelog
 changelog-button-new-entries = Changelog (new!)
 
 changelog-tab-title-Changelog = Changelog
+changelog-tab-title-PacificLog = Pacific Log
+
 changelog-tab-title-Admin = Admin
