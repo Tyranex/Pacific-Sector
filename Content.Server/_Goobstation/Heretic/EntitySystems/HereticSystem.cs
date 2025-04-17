@@ -23,7 +23,6 @@ using Content.Server.Revolutionary.Components;
 using Content.Shared.Random.Helpers;
 using Content.Shared.Roles.Jobs;
 using Robust.Shared.Prototypes;
-using Content.Shared.Changeling;
 
 namespace Content.Server.Heretic.EntitySystems;
 
