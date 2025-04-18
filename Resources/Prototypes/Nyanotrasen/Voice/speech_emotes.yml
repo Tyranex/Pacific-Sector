@@ -1,0 +1,101 @@
+# vocal emotes
+- type: emote
+  id: Hiss
+  name: nyan-chat-emote-name-hiss
+  category: Vocal
+  icon: _DV/Interface/Emotes/hiss.png
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [hisses.]
+  chatTriggers:
+    - hiss
+    - hisses
+    - hissing
+    - hissed
+
+- type: emote
+  id: Meow
+  name: nyan-chat-emote-name-meow
+  category: Vocal
+  icon: _DV/Interface/Emotes/meow.png
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [meows.]
+  chatTriggers:
+    - meow
+    - meows
+    - meowing
+    - meowed
+    - miau
+    - miaus
+    - nya
+    - nyas
+    - mraow
+    - mraows
+
+- type: emote
+  id: Mew
+  name: nyan-chat-emote-name-mew
+  icon: _DV/Interface/Emotes/mew.png
+  category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [mews.]
+  chatTriggers:
+    - mew
+    - mews
+    - mewing
+    - mewed
+
+- type: emote
+  id: Growl
+  name: chat-emote-name-growl
+  icon: _DV/Interface/Emotes/growl.png
+  category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [growls.]
+  chatTriggers:
+    - growl
+    - growls
+    - growling
+    - growled
+
+- type: emote
+  id: Purr
+  name: chat-emote-name-purr
+  icon: _DV/Interface/Emotes/purr.png
+  category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [purrs.]
+  chatTriggers:
+    - purr
+    - purrs
+    - purring
+    - purred
