@@ -225,6 +225,7 @@
   id: BaseMobSpeciesOrganic
   abstract: true
   components:
+  - type: Carriable # Pacific
   - type: Barotrauma
     damage:
       types:
