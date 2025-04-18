@@ -5,7 +5,6 @@ using Content.Server.Mind.Commands;
 using Content.Server.Polymorph.Components;
 using Content.Shared.Actions;
 using Content.Shared.Buckle;
-using Content.Shared.Coordinates;
 using Content.Shared.Damage;
 using Content.Shared.Destructible;
 using Content.Shared.Hands.EntitySystems;
@@ -278,10 +277,6 @@ public sealed partial class PolymorphSystem : EntitySystem
         var ev = new PolymorphedEvent(uid, child, false);
         RaiseLocalEvent(uid, ref ev);
 
-        // visual effect spawn
-        if (configuration.EffectProto != null)
-            SpawnAttachedTo(configuration.EffectProto, child.ToCoordinates());
-
         return child;
     }
 
@@ -358,16 +353,15 @@ public sealed partial class PolymorphSystem : EntitySystem
         var ev = new PolymorphedEvent(uid, parent, true);
         RaiseLocalEvent(uid, ref ev);
 
-        // visual effect spawn
-        if (component.Configuration.EffectProto != null)
-            SpawnAttachedTo(component.Configuration.EffectProto, parent.ToCoordinates());
-
         if (component.Configuration.ExitPolymorphPopup != null)
             _popup.PopupEntity(Loc.GetString(component.Configuration.ExitPolymorphPopup,
                 ("parent", Identity.Entity(uid, EntityManager)),
                 ("child", Identity.Entity(parent, EntityManager))),
                 parent);
         QueueDel(uid);
+
+        // goob edit
+        RaiseLocalEvent(parent, new PolymorphRevertEvent());
 
         return parent;
     }
@@ -415,3 +409,6 @@ public sealed partial class PolymorphSystem : EntitySystem
             _actions.RemoveAction(target, val);
     }
 }
+
+// goob edit
+public sealed partial class PolymorphRevertEvent : EntityEventArgs { }

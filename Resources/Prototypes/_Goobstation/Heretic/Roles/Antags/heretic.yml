@@ -1,0 +1,15 @@
+- type: antag
+  id: Heretic
+  name: roles-antag-heretic-name
+  antagonist: true
+  playTimeTracker: AntagHeretic
+  setPreference: true
+  objective: roles-antag-heretic-description
+  guides: [ Heretics ]
+
+- type: startingGear
+  id: HereticGear
+  storage:
+    back:
+    - CodexCicatrix
+    - OrganHumanHeart
