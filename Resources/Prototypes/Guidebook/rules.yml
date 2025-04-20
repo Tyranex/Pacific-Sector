@@ -49,14 +49,49 @@
   ruleEntry: true
   text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC6Minimod.xml"
 
-- type: guideEntry
+- type : guideEntry
   id: RuleSC7
-  name: guide-entry-rules-sc7
+  name: guide_entry-rules-sc7
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC7Universe.xml"
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC7Privacy.xml"
 
+- type : guideEntry
+  id: RuleSC8
+  name: guide_entry-rules-sc8
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC8Bigot.xml"
 
+# RP rules
 
+- type : guideEntry
+  id: RuleSRP1
+  name: guide_entry-rules-srp1
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/RPRules/RuleSRP1Universe.xml"
+
+- type : guideEntry
+  id: RuleSRP2
+  name: guide_entry-rules-srp2
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/RPRules/RuleSRP2Character.xml"
+
+- type : guideEntry
+  id: RuleSRP3
+  name: guide_entry-rules-srp3
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/RPRules/RuleSRP3Escalation.xml"
+
+- type : guideEntry
+  id: RuleSRP4
+  name: guide_entry-rules-srp4
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/RPRules/RuleSRP4Alert.xml"
+
+- type : guideEntry
+  id: RuleSRP5
+  name: guide_entry-rules-srp5
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/RPRules/RuleSRP5ValidHunt.xml"
 
 # Default below
 
