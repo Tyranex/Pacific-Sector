@@ -1,6 +1,100 @@
 ﻿# Only one of those rulesets will appear on the server at any given time.
 # They all have a priority of 10 so they appear 2nd by default (after priority 0 and before priority 20)
 
+- type: guideEntry
+  id: PacificRuleset
+  name: guide-entry-rules-pacific
+  ruleEntry: true
+  priority: 20
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/Rules.xml"
+  children:
+  - RuleSC1
+  - RuleSC2
+  - RuleSC3
+
+# Core rules
+- type: guideEntry
+  id: RuleSC1
+  name: guide-entry-rules-sc1
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC1Admins.xml"
+
+- type: guideEntry
+  id: RuleSC2
+  name: guide-entry-rules-sc2
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC2Respect.xml"
+
+- type: guideEntry
+  id: RuleSC3
+  name: guide-entry-rules-sc3
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC3NSFW.xml"
+
+- type: guideEntry
+  id: RuleSC4
+  name: guide-entry-rules-sc4
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC4CurrentRound.xml"
+
+- type: guideEntry
+  id: RuleSC5
+  name: guide-entry-rules-sc5
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC5Cheats.xml"
+
+- type: guideEntry
+  id: RuleSC6
+  name: guide-entry-rules-sc6
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC6Minimod.xml"
+
+- type : guideEntry
+  id: RuleSC7
+  name: guide_entry-rules-sc7
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC7Privacy.xml"
+
+- type : guideEntry
+  id: RuleSC8
+  name: guide_entry-rules-sc8
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/CoreRules/RuleSC8Bigot.xml"
+
+# RP rules
+
+- type : guideEntry
+  id: RuleSRP1
+  name: guide_entry-rules-srp1
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/RPRules/RuleSRP1Universe.xml"
+
+- type : guideEntry
+  id: RuleSRP2
+  name: guide_entry-rules-srp2
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/RPRules/RuleSRP2Character.xml"
+
+- type : guideEntry
+  id: RuleSRP3
+  name: guide_entry-rules-srp3
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/RPRules/RuleSRP3Escalation.xml"
+
+- type : guideEntry
+  id: RuleSRP4
+  name: guide_entry-rules-srp4
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/RPRules/RuleSRP4Alert.xml"
+
+- type : guideEntry
+  id: RuleSRP5
+  name: guide_entry-rules-srp5
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/Pacific/RPRules/RuleSRP5ValidHunt.xml"
+
+# Default below
+
 - type: guideEntry # Default for forks and stuff. Should not be listed anywhere if the server is using a custom ruleset.
   id: DefaultRuleset
   name: guide-entry-rules
