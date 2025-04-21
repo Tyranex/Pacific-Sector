@@ -1,0 +1,139 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: ProductionBase
+  description: "Create machines create machine create machines. (If you see this, something went wrong!)"
+  components:
+  - type: Sprite
+    sprite: Objects/_pacific/Materials/ProductionPart.rsi
+    state: steel
+  - type: Item
+    sprite: Objects/_pacific/Materials/ProductionPart.rsi
+  - type: Damageable
+    damageModifierSet: FlimsyMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:DumpCanisterBehavior
+
+- type: entity
+  name: steel production part
+  parent: ProductionBase
+  id: ProductionSteel
+  description: "It can become so many things!"
+  components:
+  - type: Sprite
+    sprite: Objects/_pacific/Materials/ProductionPart.rsi
+    state: steel
+
+- type: entity
+  name: glass production part
+  parent: ProductionBase
+  id: ProductionGlass
+  description: "It can become so many things!"
+  components:
+  - type: Sprite
+    sprite: Objects/_pacific/Materials/ProductionPart.rsi
+    state: glass
+  - type: Damageable
+    damageModifierSet: Glass
+
+- type: entity
+  name: plastic production part
+  parent: ProductionBase
+  id: ProductionPlastic
+  description: "It can become so many things!"
+  components:
+  - type: Sprite
+    sprite: Objects/_pacific/Materials/ProductionPart.rsi
+    state: plastic
+
+- type: entity
+  name: gold production part
+  parent: ProductionBase
+  id: ProductionGold
+  description: "It can become so many things!"
+  components:
+  - type: Sprite
+    sprite: Objects/_pacific/Materials/ProductionPart.rsi
+    state: gold
+
+- type: entity
+  name: silver production part
+  parent: ProductionBase
+  id: ProductionSilver
+  description: "It can become so many things!"
+  components:
+  - type: Sprite
+    sprite: Objects/_pacific/Materials/ProductionPart.rsi
+    state: silver
+
+- type: entity
+  name: plasma production part
+  parent: ProductionBase
+  id: ProductionPlasma
+  description: "It can become so many things! Highly flammable!"
+  components:
+  - type: Sprite
+    sprite: Objects/_pacific/Materials/ProductionPart.rsi
+    state: plasma
+  - type: Flammable
+    fireSpread: true
+    canResistFire: false
+    alwaysCombustible: true
+    canExtinguish: false
+    damage:
+      types:
+        Heat: 3
+  - type: FireVisuals
+    sprite: Effects/fire.rsi
+    normalState: fire
+  - type: GasCanister
+    gasMixture:
+      volume: 1
+      moles:
+      - 0 # oxygen
+      - 0 # nitrogen
+      - 0 # carbon dioxide
+      - 100 # plasma
+      temperature: 1000
+  - type: Damageable
+    damageModifierSet: Wood
+
+- type: entity
+  name: uranium production part
+  parent: ProductionBase
+  id: ProductionUranium
+  description: "It can become so many things! Radioactive!"
+  components:
+  - type: Sprite
+    sprite: Objects/_pacific/Materials/ProductionPart.rsi
+    state: uranium
+  - type: RadiationSource
+    intensity: 2
+    slope: 0.3
+
+- type: entity
+  name: diamond production part
+  parent: ProductionBase
+  id: ProductionDiamond
+  description: "It can become so many things!"
+  components:
+  - type: Sprite
+    sprite: Objects/_pacific/Materials/ProductionPart.rsi
+    state: diamond
+
+- type: entity
+  name: bluespace production part
+  parent: ProductionBase
+  id: ProductionBluespace
+  description: "It can become so many things!"
+  components:
+  - type: Sprite
+    sprite: Objects/_pacific/Materials/ProductionPart.rsi
+    state: bluespace

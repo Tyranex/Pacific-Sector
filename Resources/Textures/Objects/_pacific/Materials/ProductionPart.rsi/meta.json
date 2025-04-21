@@ -1,0 +1,38 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-4.0",
+    "copyright": "Made by Kitchen Fire from Pacific Sector SS14",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "steel"
+        },
+		{
+			"name": "glass"
+		},
+		{
+			"name": "plastic"
+		},
+		{
+			"name": "gold"
+		},
+		{
+			"name": "silver"
+		},
+		{
+			"name": "plasma"
+		},
+		{
+			"name": "uranium"
+		},
+		{
+			"name": "diamond"
+		},
+		{
+			"name": "bluespace"
+		}
+    ]
+}
