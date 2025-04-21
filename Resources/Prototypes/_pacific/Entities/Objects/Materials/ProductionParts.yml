@@ -2,7 +2,7 @@
   abstract: true
   parent: BaseItem
   id: ProductionBase
-  description: "Create machines create machine create machines. (If you see this, something went wrong!)"
+  description: "Create machines create machine create machines create machines. (If you see this, something went wrong!)"
   components:
   - type: Sprite
     sprite: Objects/_pacific/Materials/ProductionPart.rsi
