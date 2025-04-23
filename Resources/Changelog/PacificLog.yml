@@ -18,3 +18,9 @@ Entries:
       message: Added custom core and RP rules!
   id: 3
   time: '2025-04-20T23:28:17.0000000+00:00'
+- author: Tyranex
+  changes:
+    - type: Add
+      message: Added Thavan!
+  id: 4
+  time: '2025-04-23T02:11:52.0000000+00:00'
