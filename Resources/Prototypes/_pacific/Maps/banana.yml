@@ -18,7 +18,7 @@
         - type: StationCargoShuttle
           path: /Maps/_Pacific/Shuttles/cargo_banana.yml
         - type: StationJobs
-          availableJobs: # Total of 26 jobs roundstart
+          availableJobs: # Total of 27 jobs roundstart, plus passenger
             # command - 7
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
@@ -50,9 +50,8 @@
             # security - 2
             SecurityCadet: [ 1, 1 ]
             SecurityOfficer: [ 1, 1 ]
-            # cargo - 3
+            # cargo - 2
             CargoTechnician: [ 1, 1 ]
-            Courier: [ 1, 1 ]
             SalvageSpecialist: [ 1, 1 ]
             # civilian
             Passenger: [ -1, -1 ]
