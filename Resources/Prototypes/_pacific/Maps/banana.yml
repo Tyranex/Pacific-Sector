@@ -1,0 +1,57 @@
+- type: gameMap
+  id: Banana
+  mapName: 'Banana'
+  mapPath: /Maps/_Pacific/banana.yml
+  minPlayers: 0
+  maxPlayers: 18
+  stations:
+    Banana:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Banana {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '-IMP-KDN'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency.yml
+        - type: StationCargoShuttle
+          path: /Maps/_Pacific/Shuttles/cargo_banana.yml
+        - type: StationJobs
+          availableJobs: # Total of 27 jobs roundstart, plus passenger
+            # command - 7
+            Captain: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            ChiefEngineer: [ 1, 1 ]
+            ChiefMedicalOfficer: [ 1, 1 ]
+            ResearchDirector: [ 1, 1 ]
+            HeadOfSecurity: [ 1, 1 ]
+            Quartermaster: [ 1, 1 ]
+            # service - 7
+            Bartender: [ 1, 1 ]
+            Botanist: [ 1, 1 ]
+            Chef: [ 1, 1 ]
+            Clown: [ 1, 1 ]
+            Janitor: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 1 ]
+            # engineering - 3
+            AtmosphericTechnician: [ 1, 1 ]
+            StationEngineer: [ 1, 1 ]
+            TechnicalAssistant: [ 1, 1 ]
+            # medical - 3
+            Chemist: [ 1, 1 ]
+            MedicalDoctor: [ 1, 1 ]
+            MedicalIntern: [ 1, 1 ]
+            # science - 3
+            Borg: [ 1, 1 ]
+            ResearchAssistant: [ 1, 1 ]
+            Scientist: [ 1, 1 ]
+            # security - 2
+            SecurityCadet: [ 1, 1 ]
+            SecurityOfficer: [ 1, 1 ]
+            # cargo - 2
+            CargoTechnician: [ 1, 1 ]
+            SalvageSpecialist: [ 1, 1 ]
+            # civilian
+            Passenger: [ -1, -1 ]
