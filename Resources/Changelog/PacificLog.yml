@@ -24,3 +24,13 @@ Entries:
       message: Added Thavan!
   id: 4
   time: '2025-04-23T02:11:52.0000000+00:00'
+- author: Ecramox
+  changes:
+    - type: Add
+      message: Added Frank, the Radiation Crab!
+    - type: Add
+      message: >-
+        Added the map of Banana, not in rotation until Tyra takes another look
+        at it.
+  id: 5
+  time: '2025-04-25T03:34:06.0000000+00:00'
