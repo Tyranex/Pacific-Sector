@@ -40,3 +40,11 @@ Entries:
       message: Added banana to rotation!
   id: 6
   time: '2025-04-26T08:41:32.0000000+00:00'
+- author: Tyranex
+  changes:
+    - type: Fix
+      message: >-
+        Fixed the discord changelog targetting upstream instead of our
+        changelog. Oops!
+  id: 7
+  time: '2025-04-26T08:57:14.0000000+00:00'
