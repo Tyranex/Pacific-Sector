@@ -60,3 +60,9 @@ Entries:
       message: Added many human and multi-species markings from Impstation!
   id: 9
   time: '2025-04-29T03:19:46.0000000+00:00'
+- author: Ecramox
+  changes:
+    - type: Add
+      message: Moth Markings from Imp!!
+  id: 10
+  time: '2025-04-29T06:46:59.0000000+00:00'
