@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "mothbiggereyes by Carousel, moth_burn_l through head_twisting_moth by Carousel and Snavian",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+        {
+            "name": "mothbiggereyes",
+            "directions": 4
+        },
+        {
+            "name": "moth_burn_l",
+            "directions": 4
+        },
+        {
+            "name": "moth_burn_r",
+            "directions": 4
+        },
+        {
+            "name": "moth_face_claw",
+            "directions": 4
+        },
+        {
+            "name": "moth_slash_l",
+            "directions": 4
+        },
+        {
+            "name": "moth_slash_r",
+            "directions": 4
+        },
+        {
+            "name": "eyes_heterochromia_moth",
+            "directions": 4
+        },
+        {
+            "name": "head_badmolt_moth",
+            "directions": 4
+        },
+        {
+            "name": "head_chimera_moth",
+            "directions": 4
+        },
+        {
+            "name": "head_eyebags_moth",
+            "directions": 4
+        },
+        {
+            "name": "head_twisting_moth",
+            "directions": 4
+        }
+    ]
+}

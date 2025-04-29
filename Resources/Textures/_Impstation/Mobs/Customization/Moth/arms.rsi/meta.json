@@ -1,0 +1,51 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "drawn by Snavian and Carousel for Impstation",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+        {
+            "name": "arm_l_chimera_moth",
+            "directions": 4
+        },
+        {
+            "name": "arm_l_prosthetic_moth",
+            "directions": 4
+        },
+        {
+            "name": "arm_l_twisting_moth",
+            "directions": 4
+        },
+        {
+            "name": "arm_r_prosthetic_moth",
+            "directions": 4
+        },
+        {
+            "name": "arm_r_twisting_moth",
+            "directions": 4
+        },
+        {
+            "name": "hand_l_chimera_moth",
+            "directions": 4
+        },
+        {
+            "name": "hand_l_prosthetic_moth",
+            "directions": 4
+        },
+        {
+            "name": "hand_l_twisting_moth",
+            "directions": 4
+        },
+        {
+            "name": "hand_r_twisting_moth",
+            "directions": 4
+        },
+        {
+            "name": "hand_r_prosthetic_moth",
+            "directions": 4
+        }
+    ]
+}
