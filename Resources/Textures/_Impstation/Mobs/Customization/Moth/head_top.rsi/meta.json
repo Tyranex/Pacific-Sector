@@ -1,0 +1,49 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "mothbeetlehorn1 through mothglowantenna by Carousel",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+        {
+            "name": "mothbeetlehorn1",
+            "directions": 4
+        },
+        {
+            "name": "mothbeetlehorn2",
+            "directions": 4
+        },
+        {
+            "name": "mothglowantenna",
+            "directions": 4,
+            "delays": [
+                [
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3
+                ],
+                [
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3
+                ],
+                [
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3
+                ],
+                [
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "mothtruebutterfly1 through luna2 by Carousel, wings_backstabbed by Snavian and Carousel",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+        {
+            "name": "mothtruebutterfly1",
+            "directions": 4
+        },
+        {
+            "name": "mothtruebutterfly2",
+            "directions": 4
+        },
+        {
+            "name": "mothtruebutterfly3",
+            "directions": 4
+        },
+        {
+            "name": "mothfirefly2",
+            "directions": 4
+        },
+        {
+            "name": "mothbeetlehorn1",
+            "directions": 4
+        },
+        {
+            "name": "mothbeetlehorn2",
+            "directions": 4
+        },
+        {
+            "name": "mothbiggereyes",
+            "directions": 4
+        },
+        {
+            "name": "luna1",
+            "directions": 4
+        },
+        {
+            "name": "luna2",
+            "directions": 4
+        },
+        {
+            "name": "wings_backstabbed",
+            "directions": 4
+        }
+    ]
+}

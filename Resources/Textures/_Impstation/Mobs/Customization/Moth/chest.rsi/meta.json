@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "moth_body_claw through torso_incision_moth by Snavian and Carousel",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+        {
+            "name": "moth_body_claw",
+            "directions": 4
+        },
+        {
+            "name": "chest_chimera_m_moth",
+            "directions": 4
+        },
+        {
+            "name": "chest_l_twisting_f_moth",
+            "directions": 4
+        },
+        {
+            "name": "chest_l_twisting_m_moth",
+            "directions": 4
+        },
+        {
+            "name": "chest_r_twisting_f_moth",
+            "directions": 4
+        },
+        {
+            "name": "chest_r_twisting_m_moth",
+            "directions": 4
+        },
+        {
+            "name": "chest_star_moth",
+            "directions": 4
+        },
+        {
+            "name": "torso_incision_moth",
+            "directions": 4
+        }
+    ]
+}
