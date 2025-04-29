@@ -611,7 +611,7 @@
   id: WingsBackstabbed
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Moth]
+  speciesRestriction: [ Moth ]
   followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/Moth/tails.rsi
