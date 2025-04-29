@@ -48,3 +48,9 @@ Entries:
         changelog. Oops!
   id: 7
   time: '2025-04-26T08:57:14.0000000+00:00'
+- author: Ecramox
+  changes:
+    - type: Add
+      message: Something just happened. (Minor backend addition, don't worry about it)
+  id: 8
+  time: '2025-04-29T03:18:56.0000000+00:00'
