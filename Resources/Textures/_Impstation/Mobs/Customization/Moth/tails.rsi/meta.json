@@ -80,6 +80,18 @@
             "directions": 4
         },
         {
+            "name": "beetle1",
+            "directions": 4
+        },
+        {
+            "name": "beetle2",
+            "directions": 4
+        },
+        {
+            "name": "beetle3",
+            "directions": 4
+        },
+        {
             "name": "luna1",
             "directions": 4
         },
