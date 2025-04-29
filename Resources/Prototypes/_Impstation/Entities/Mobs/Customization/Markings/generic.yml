@@ -6,6 +6,7 @@
   id: HumanHairGatheredlow
   bodyPart: Hair
   markingCategory: Hair
+  speciesRestriction: [ Human, Dwarf, SlimePerson ]
   sprites:
     - sprite: _Impstation/Mobs/Customization/Generic/hair.rsi
       state: gatheredlow
@@ -14,6 +15,7 @@
   id: HumanHairLowpigtails
   bodyPart: Hair
   markingCategory: Hair
+  speciesRestriction: [ Human, Dwarf, SlimePerson ]
   sprites:
     - sprite: _Impstation/Mobs/Customization/Generic/hair.rsi
       state: lowpigtails
