@@ -18,6 +18,8 @@ using Content.Shared.Mobs.Systems;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Content.Shared._DV.CosmicCult.Components; // DeltaV
+
 
 namespace Content.Server.Body.Systems;
 
@@ -75,8 +77,6 @@ public sealed class RespiratorSystem : EntitySystem
                 continue;
 
             UpdateSaturation(uid, -(float) respirator.UpdateInterval.TotalSeconds, respirator);
-
-            if (!_mobState.IsIncapacitated(uid)) // cannot breathe in crit.
             {
                 switch (respirator.Status)
                 {
@@ -93,6 +93,9 @@ public sealed class RespiratorSystem : EntitySystem
 
             if (respirator.Saturation < respirator.SuffocationThreshold)
             {
+                // DeltaV: Cosmic Cult - One line change but a refactor would be better. this is kinda cringe. Makes cultists gasp and respirate but not asphyxiate in space.
+                if (TryComp<CosmicCultComponent>(uid, out var cultComponent) && !cultComponent.Respiration && !_mobState.IsIncapacitated(uid)) return;
+
                 if (_gameTiming.CurTime >= respirator.LastGaspEmoteTime + respirator.GaspEmoteCooldown)
                 {
                     respirator.LastGaspEmoteTime = _gameTiming.CurTime;

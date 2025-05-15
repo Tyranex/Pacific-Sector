@@ -96,4 +96,9 @@ public sealed partial class PlayerTabEntry : PanelContainer
         BackgroundColorPanel.PanelOverride = styleBoxFlat;
         OverallPlaytimeLabel.Text = player.PlaytimeString;
     }
+
+    public PlayerTabEntry(PlayerInfo player, StyleBoxFlat styleBoxFlat)
+    {
+        throw new NotImplementedException();
+    }
 }
